@@ -3,11 +3,10 @@
     align-self: center
     display: grid
     grid-template-columns: 1fr 1fr
-    max-width: 800px
-    box-shadow: 0 0 10px 0 gray
+    max-width: 635px
 
 .join, .sub, .why
-    padding: 2em
+    padding: 2.5em
 
 .join
     grid-column: span 2
@@ -17,14 +16,45 @@
         font-size: 1.5em
         color: $cyan
     h2
-        font-size: 1.2em
         color: $bright-yellow
+        padding: 1.4em 0 .7em
     p
+        line-height: 1.6em
         color: $grayish-blue
 
 .sub
-
+    display: flex
+    flex-direction: column
+    background: $cyan
+    color: white
+    border-radius: 0 0 0 10px
+    .monthly
+        display: flex
+        align-items: center
+        gap: 1em
+        padding: 1.2em 0 .5em
+        .price
+            font-size: 2em
+        p
+            color: $grayish-blue
+    a 
+    .btn
+        color: white
+        text-decoration: none
+        background: $bright-yellow
+        text-align: center
+        margin-top: 1.8em
+        padding: .9em 0
+        border-radius: 5px
+        box-shadow: 0 5px 30px 0 gray
+        
 .why
-
+    background: $light-cyan
+    color: white
+    border-radius: 0 0 10px 0
+    h2
+        padding-bottom: 1em
     ul
+        font-size: 14px
         list-style: none
+        line-height: 1.4em
